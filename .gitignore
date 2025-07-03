@@ -1,0 +1,106 @@
+# IBD Plant Virome Pipeline - Git Ignore File
+
+# Data files (never commit actual data)
+*.tsv
+*.tsv.gz
+*.csv
+*.csv.gz
+*.fasta
+*.fasta.gz
+*.fa
+*.fa.gz
+
+# Output and results directories
+results/
+outputs/
+logs/
+*.out
+*.err
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# R
+.Rhistory
+.Rapp.history
+.RData
+.Ruserdata
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# SLURM job files
+slurm-*.out
+slurm-*.err
+
+# Test data (keep test scripts but exclude test data files)
+test_data/*.tsv*
+test_data/*.csv*
+test_data/*.gz
+
+# Local configuration files
+config/local_*.sh
+config/*.local
+
+# Backup files
+*.bak
+*.backup
+
+# Large files that should be stored elsewhere
+*.bigfile
+*.large
+
+# Specific to this project
+validation/reference_outputs/*.tsv
+validation/reference_outputs/*.csv
+validation/reference_outputs/*.json
